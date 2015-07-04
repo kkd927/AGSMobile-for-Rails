@@ -30,10 +30,11 @@ class AGSMobile
 
 	def log(str)
 		if @@logging
-			logfile = "log/agsmobile_#{Time.now.strftime("%Y%m%d")}.log"
-			@@logfile = File.open(logfile, "a+")
+			logfile = "#{Rails.root}/log/agsmobile_#{Time.now.strftime("%Y%m%d")}.log"
+			@@logfile = File.open(logfile, "a")
 			str = "#{Time.now.strftime("%Y-%m-%d %H:%M:%S")}==>#{str}"
 			@@logfile.puts(str)
+			@@logfile.close
 		else
 			@@logfile.close if @@logfile
 		end
@@ -165,7 +166,6 @@ class AGSMobile
 			ret["status"] = "error"
 		end
 
-		@@logfile.close if @@logfile
 		ret
 	end
 
