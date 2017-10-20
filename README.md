@@ -1,4 +1,4 @@
-#AGSMobile-for-Rails
+# AGSMobile-for-Rails
 이지스엔터프라이즈(주)에서 제공하는 __AllTheGate 모바일 결제모듈__(AGSMobile V2.0)은 asp, jsp, php 라이브러리만 제공합니다.
 Rails 프레임워크에서 사용할 수 있게 라이브러리를 Ruby 언어로 제작하였습니다.
 
@@ -6,11 +6,11 @@ __AGSMobile_2.0 디렉터리__에는 이즈스엔터프라이즈(주)에서 제�
 기본적인 흐름은 문서를 통해 참고하세요.
 
 
-##Current status
+## Current status
 현재 __카드결제(ISP 안전결제, 안심클릭) 기능만 구현__되어 있습니다. 휴대폰 결제, 가상계좌(무통장입금), 결제취소 기능은 미구현 상태입니다. Contribution 환영합니다. 카드결제 기능만 사용하신다면 바로 사용이 가능합니다. 해당 로그파일은 현재 진행 중인 Rails 프로젝트의 log/ 디렉터리에 agsmobile_날짜 형태로 저장됩니다.
 
 
-##Getting started
+## Getting started
 이 문서는 Rails 4.0 기준으로 작성되었습니다.
 
 1. __agsmobile.rb__ 파일을 작업 중인 Rails 프로젝트의 __lib 디렉터리__ 아래에 둡니다.
